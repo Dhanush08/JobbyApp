@@ -1,99 +1,143 @@
-.nav-container {
-  background-color: #272727;
-  padding: 10px;
-}
-
-.header-ul-container {
+.nav-header {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  list-style: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212;
+  /* height: 20vh; */
 }
-
-.logo-container {
-  margin-left: 10px;
-}
-
-.home-jobs-container {
-  list-style: none;
+.nav-content {
   display: flex;
-  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
-  width: 20%;
+  width: 90%;
+  /* background-color: aqua; */
+  padding: 15px 0 25px 0;
 }
 
-.nav-text {
-  color: #ffffff;
-  font-weight: bold;
-  font-family: 'Roboto';
-  font-size: 23px;
-}
-
-.btn-logout {
-  color: #ffffff;
-  background-color: #4f46e5;
-  border: 0;
-  border-radius: 5px;
-  padding: 5px;
-  margin-right: 10px;
-  margin-top: 10px;
-  font-weight: bold;
-  font-size: 15px;
-  width: 100px;
-  height: 40px;
-  cursor: pointer;
-}
-
-.link {
-  text-decoration: none;
-}
-
-.home-icon {
-  color: #ffffff;
-  font-size: 200%;
+.nav-bar-mobile-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
-  .home-icon {
-    display: none;
-  }
-
-  .home-jobs-btn {
+  .nav-bar-mobile-container {
     display: none;
   }
 }
 
+.nav-bar-mobile-icons-container {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  /* background-color: #4f46e5; */
+}
+
+.nav-mobile-btn {
+  border: none;
+  padding: 0px;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  font-size: 24px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-item-mobile-link {
+  font-size: 24px;
+  color: #ffffff;
+  margin-right: 20px;
+}
+@media screen and (min-width: 768px) {
+  .nav-mobile-btn {
+    display: none;
+  }
+}
+
+.nav-bar-large-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  /* background-color: white; */
+}
+
 @media screen and (max-width: 767px) {
-  .nav-text {
+  .nav-bar-large-container {
     display: none;
   }
+}
 
-  .btn-logout {
+.website-logo {
+  width: 90px;
+  margin-top: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .website-logo {
+    width: 125px;
+  }
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-self: flex-end;
+  list-style-type: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  /* background-color: aqua; */
+}
+
+@media screen and (max-width: 767px) {
+  .nav-menu {
     display: none;
   }
-
-  .logo {
-    width: 100%;
-    height: 100%;
+  .nav-content {
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
+}
 
-  .logo-container {
-    width: 20%;
-  }
+.nav-menu-item {
+  font-family: 'Roboto';
+  text-decoration: none;
+  margin: 10px;
+  font-weight: 400;
+  font-size: 16px;
+}
 
-  .home-jobs-container {
-    width: 40%;
-  }
+.nav-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+}
+.large-device-button-container {
+  display: flex;
+  justify-content: flex-end;
+  /* background-color: white; */
+  margin-top: 10px;
+}
+.logout-desktop-btn {
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #4f46e5;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  padding: 12px 42px;
+}
 
-  .home-jobs-btn {
-    color: #ffffff;
-    background-color: #4f46e5;
-    border: 0;
-    border-radius: 5px;
-    width: 120%;
-    height: 100%;
-    font-weight: bold;
-    cursor: pointer;
-    padding: 5px;
+@media screen and (max-width: 767px) {
+  .logout-desktop-btn {
+    display: none;
   }
 }
